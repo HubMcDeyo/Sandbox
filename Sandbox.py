@@ -1,12 +1,19 @@
 def main() -> None: #Define the function main (codespace #1) 
-    pass #Add pass to avoid error (Pass=ignore). Also allows the code below to run without indentation.
-Width = int(input("Width:")) #input width
-Length = int(input("Length:")) #input length
-Area = Width * Length #Area =length*width
-Time = 10 + (Area / 40) #Time=10 minutes (load time) + (Area / 40) where 40 is the rate she mows in ft/min.
-Area_Time = Area / Time #The area she mows per hour is the total area divided by the Time.
-Cost = (30 / 60) * Area_Time #Cost=Area mowed per hour *cost per minute (30 / 60).
-print(f"${Cost:.2f}") #output cost to 2 decimals
+    pass #Add pass to avoid error (Pass=ignore). Also allows the code below to run without indentation. #MOD=% pseudocode. 
+Var1: int = float(input()) #User is supposed to input an integer, but a float is possible.
+if Var1 > 0:
+    print("Positive")
+if Var1 < 0:
+    print("Negative")
+if Var1 == 0:
+    print("It's Zero")
+if Var1 % 2 == 0:
+    print("Even")
+if Var1 % 2 == 1:
+    print("Odd")
+if Var1 % 1 != 0:
+    print("It was supposed to be an integer")
+
 
 
 if __name__ == "__main__":
