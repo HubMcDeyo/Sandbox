@@ -1,8 +1,13 @@
+"""A program for the Kattis part. 
+Miles Deyo--October 2025
+"""
+
 def main() -> None:
-    pass
-
-
-
-
+    import sys
+    import math
+    import string
+    cases = int(sys.stdin.readline().rstrip())
+    for caseNum in range(cases):
+        print(sys.stdin.readline().rstrip()) 
 if __name__ == "__main__":
     main()
