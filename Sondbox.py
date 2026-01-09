@@ -1,21 +1,24 @@
-from itertools import repeat
+"""
+General CodeQuest solution
+Miles Deyo - January 2026
+"""
 
+import sys
+import math
+import string
 
-def mainfunction() -> None:
-    # Read input, remove spaces, reverse the string and check palindrome
-    String = input("Enter a string: ")  # Get the String
-    Strong = String.replace(" ", "")  # remove all spaces
+def main() -> None:
+    case_count: int = int(sys.stdin.readline().rstrip())
+    for _ in range(case_count):
+        # input
+        num_components: int = int(sys.stdin.readline().rstrip()) # you may need to tweak this depending on the problem
+        # processing
+        
 
-    # create reversed string using slice with step -1
-    reversed_str = Strong[::-1]
+        
 
-    # case-insensitive palindrome check
-    if Strong.lower() == reversed_str.lower():
-        print("palindrome:", String)
-    else:
-        # print the reversed form (not empty)
-        print("not a palindrome:", reversed_str)
+        # output
 
 
 if __name__ == "__main__":
-    mainfunction()
+    main()

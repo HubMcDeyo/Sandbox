@@ -1,5 +1,15 @@
+import sys
+
 def main() -> None:
-    pass
+    test_cases_count: int = int(sys.stdin.readline().rstrip())
+    for _ in range(test_cases_count):
+        test_case: str = sys.stdin.readline().rstrip()
+        V,X = test_case.split(":")
+        V: float = float(V)  #type-hints not needed for this
+        X = float(X)
+        
+
+
 
 
 

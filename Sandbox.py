@@ -1,22 +1,26 @@
+import sys
+
 def main() -> None: #Define the function main (codespace #1) 
-    pass #Add pass to avoid error (Pass=ignore). Also allows the code below to run without indentation. #MOD=% pseudocode. 
-Var1: int = float(input("Enter Number:")) #User is supposed to input an integer, but a float is possible.
-if Var1 > 0:
-    print("Positive")
-elif Var1 < 0:
-    print("Negative")
-else:
-    print("It's Zero")
-if Var1 % 2 == 0 and Var1 > 0:
-    print("Even")
-elif Var1 % 2 == 1:
-    print("Odd")
-elif Var1 % 1 != 0:
-    print("Not an integer")
-else: 
-    print("...")
-
-
-
+    case_count: int = int(sys.stdin.readline().rstrip())
+    Primary_colors = "yellow blue red"
+    for g in range(case_count): 
+        Color: str = sys.stdin.readline().rstrip()
+        if Color == "violet":
+            print("In order to make violet, blue and red must be mixed.")
+        if Color == "blue-green":
+            print("In order to make blue-green, blue and yellow must be mixed.")
+        if Color == "yellow":
+            print("No colors need to be mixed to make yellow.")
+        if Color == "orange":
+            print("In order to make orange, red and yellow must be mixed.")
+        if Color in Primary_colors:
+            print(f"No colors need to be mixed to make {Color}")
 if __name__ == "__main__":
     main()
+
+#if "-" in Color: 
+           # tokens = Color.split("-")
+          #  a = tokens[0]
+          #  b = tokens[1]
+      #  if Color ==
+         #   print(f"In order to make {Color}, ")
