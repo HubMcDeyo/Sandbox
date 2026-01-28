@@ -14,7 +14,7 @@ def main() -> None:
             x= float(x)
             v=float(v)
             if v == 0: 
-            time_to_collide = "SAFE"
+                time_to_collide = "SAFE"
             print(time_to_collide)
         else:
             time_to_collide = x / v
